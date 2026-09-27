@@ -1,0 +1,14 @@
+# Text files are stored with LF, as everywhere else in this account.
+* text=auto eol=lf
+
+# The whole point of this repository is binary material. Git must never treat
+# these as text: with core.autocrlf=true (the Windows default) a misdetected
+# binary gets its line endings rewritten, which silently corrupts the file.
+*.pdf  binary
+*.doc  binary
+*.docx binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.zip  binary
